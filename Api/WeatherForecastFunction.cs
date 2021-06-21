@@ -18,15 +18,15 @@ namespace BlazorApp.Api
 
             if (temp >= 32)
             {
-                summary = "Hot";
+                summary = "Hot - test";
             }
             else if (temp <= 16 && temp > 0)
             {
-                summary = "Cold";
+                summary = "Cold - test";
             }
             else if (temp <= 0)
             {
-                summary = "Freezing";
+                summary = "Freezing - test";
             }
 
             return summary;
