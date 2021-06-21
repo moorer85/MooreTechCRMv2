@@ -18,7 +18,7 @@ namespace BlazorApp.Api
 
             if (temp >= 32)
             {
-                summary = "Hot - test";
+                summary = "Hot - bad";
             }
             else if (temp <= 16 && temp > 0)
             {
@@ -34,7 +34,7 @@ namespace BlazorApp.Api
 
         [FunctionName("WeatherForecast")]
         public static IActionResult Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "roytest")] HttpRequest req,
             ILogger log)
         {
             var randomNumber = new Random();
